@@ -7,6 +7,8 @@
     /* Remove default inner space */
     box-sizing: border-box;
     /* Crucial for responsive design; border/padding are included in the element's total width/height */
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust '80px' to match the actual height of your nav bar */
 }
 
 old body {
@@ -161,6 +163,46 @@ nav ul li a:hover {
     /* Darker blue on hover */
     transform: translateY(-2px);
     /* Slight lift effect */
+}
+
+/* end of hero section styles */
+/* ========================= */
+
+/* ABOUT ME_SECTION STYLES */
+#about {
+    padding: 100px 0;
+
+    /* Flexbox magic to center content vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    /* Stack text vertically */
+    justify-content: center;
+    /* Center vertically */
+    align-items: center;
+    /* Center horizontally */
+    text-align: center;
+    /* Ensure text lines are centered */
+
+    /* Add a little padding so it doesn't hit the edges on mobile */
+    padding: 0 20px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    /* Make the main text big (Apple style) */
+    font-weight: 700;
+    margin-bottom: 20px;
+    /* Space between title and subtitle */
+    color: var(--text-color);
+}
+
+#about p {
+    font-size: 1.5rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 40px;
+    /* Space before the button */
+    max-width: 900px;
+    /* Stop the line from getting too long to read */
 }
 
 /* =========================
