@@ -41,3 +41,32 @@ scribeBtn.addEventListener('click', async () => {
         console.error(error);
     }
 });
+
+// 3. ADD MORE MAGIC (Optional)
+// You can add more features like:
+// - Adding a button to clear the display
+// - Adding a button to fetch multiple jokes at once
+// - Adding a button to save the joke to a local storage
+// - Adding a button to share the joke on social media 
+// - Adding a button to translate the joke into different languages
+// - Adding a button to rate the joke and show the average rating
+// - Adding a button to show a list of all the jokes fetched so far
+// - Adding a button to filter jokes by category (e.g., programming, puns)
+// - Adding a button to sort jokes by date (newest first or oldest first)
+// - Adding a button to search for a specific joke by keyword
+
+// added 12-19-2025
+// Dynamic Tab Title Change when tab is inactive/hidden
+// Store the original page title
+var originalTitle = document.title;
+
+// Listen for the 'visibilitychange' event
+document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+        // Tab is inactive/hidden
+        document.title = 'Remember me! 🥺👋';
+    } else {
+        // Tab is active/visible
+        document.title = originalTitle;
+    }
+});
