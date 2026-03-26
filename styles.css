@@ -165,6 +165,9 @@ nav ul li a:hover {
     /* Slight lift effect */
 }
 
+/* above here is original base. testing out button layout and a résumé download button, is below. */
+
+
 /* end of hero section styles */
 /* ========================= */
 
@@ -298,8 +301,7 @@ footer a {
     font-size: 0.9rem;
     font-weight: 600;
     cursor: pointer; /* Changes mouse cursor to a hand pointer */
-    margin-top: 15px;
-    transition: background-color 0.2s ease;
+    transition: background-color 2s ease;
 
     /* block display to center the button */
     display: block;
@@ -319,6 +321,50 @@ footer a {
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+/* PROJECT CARD BUTTON (Mimics the Scribe Button) */
+.card-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 2s ease;
+
+    display: block;
+    margin: 15px auto 0 auto;
+    width: fit-content; /* CRITICAL: Stops the <a> tag from stretching across the whole card */
+    text-decoration: none; /* Removes the default hyperlink underline */
+}
+
+.card-btn:hover {
+    background-color: #005ecb;
+}
+
+/* =========================
+   SOCIAL LINKS
+   ========================= */
+.social-links {
+    /* margin-top: 25px;
+    Spacing from the buttons */
+}
+
+.social-links a {
+    color: var(--text-color); /* Matches the site's text color */
+    font-size: 2.2rem; /* Makes the icon nice and large */
+    display: inline-block;
+    transition: color 2s ease, transform 1s ease; /* Smooth (dope) animations */
+}
+
+/* The Hover Effect */
+.social-links a:hover {
+    color: var(--primary-color); /* Changes to your primary color on hover */
+    color: indigo; /* For testing, indigo (league) to see the effect */
+    transform: translateY(-3px) scale(1.2); /* Lifts up and grows slightly */
 }
 
 /* end of styles.css */

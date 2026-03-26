@@ -1,4 +1,4 @@
-console.log("The Scribe is ready.");
+console.log("The Scribe is ready."); // Sanity check of script loading.
 
 // 1. SELECT ELEMENTS
 // We grab the HTML elements by their IDs so we can control them
@@ -27,7 +27,7 @@ scribeBtn.addEventListener('click', async () => {
         const data = await response.json();
 
         // D. UPDATE THE PAGE
-        // We inject new HTML into the display box using the data we got
+        // We inject new HTML into the display box using the data we got...
         scribeDisplay.innerHTML = 
         `
             <p><strong>${data.setup}</strong></p>
@@ -36,14 +36,14 @@ scribeBtn.addEventListener('click', async () => {
 
     } catch (error) {
         // E. HANDLE ERRORS
-        // If the internet is down or the API is broken, tell the user
-        scribeDisplay.innerHTML = '<p style="color: red;">The scrolls are burnt! (Connection Error)</p>';
+        // If the internet is down or the API is broken, tell the user...
+        scribeDisplay.innerHTML = '<p style="color: red;">The scrolls are lost! (Read: Connection Error with joke site)</p>';
         console.error(error);
     }
 });
 
 // 3. ADD MORE MAGIC (Optional)
-// You can add more features like:
+// TBD features:
 // - Adding a button to clear the display
 // - Adding a button to fetch multiple jokes at once
 // - Adding a button to save the joke to a local storage
@@ -64,7 +64,7 @@ var originalTitle = document.title;
 document.addEventListener('visibilitychange', function () {
     if (document.hidden) {
         // Tab is inactive/hidden
-        document.title = 'Remember me! 🥺👋';
+        document.title = 'ヾ(＾∇＾) Come back soon!';
     } else {
         // Tab is active/visible
         document.title = originalTitle;

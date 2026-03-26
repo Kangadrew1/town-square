@@ -6,8 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <title>Andrew Nguyen - Portfolio</title>
+    <title>Andrew Nguyen - Web Portfolio</title>
     
 </head>
 
@@ -27,11 +28,17 @@
     </header>
 
     <section id="hero">
-        <div class ="container">
+        <div class ="hero-content">
             <h2>Welcome to my Online Town Square 🛜</h2>
             <p>What I am currently looking to work in: <strong>Automation</strong>, <strong>Computer Software</strong> (<em>Networking, Engineering, and more!</em>), and <b>Systems Engineering</b>.
             </p>
             <a href="#projects" class="button">View My Legendary Gear</a>
+
+            <!-- for the next time on Andrew Leveling...
+            <div class="hero-buttons">
+                <a href="Andrew_Nguyen_Resume.pdf" target="_blank" class="button button-outline">📄 Andrew's Resume</a>
+            </div> -->
+
         </div>
     </section>
 
@@ -47,37 +54,66 @@
 
     <section id="projects">
         <div class ="container">
-        <h3>Legendary Weapons (Projects)</h3>
+        <h3>Legendary Gear (Projects)</h3>
 
         <div class="project-grid">
 
-        <article class="project-item">
-            <h4>The Sword of Automation (RPA Bot)</h4>
-            <p><strong>Goal:</strong> Automate a critical, time-consuming records review process.</p>
-            <p><strong>Impact:</strong> Designed, developed, and deployed an RPA bot that
-                automated a 20-hour/week manual records review process, reducing errors by 95%. This repurposed manpower and allowed many $ savings in the thousands for the National Guard this bot was deployed at.</p>
-            <p><strong>Skills Used:</strong> Python, RPA Software (UiPath/Automation Anywhere), System Integration, Data Science,
-                Problem Solving.</p>
-        </article>
+            <article class="project-item">
+                <h4>The Sword of Automation (RPA Bot)</h4>
+                <p><strong>Goal:</strong> Automate a critical, time-consuming records review process.</p>
+                <p><strong>Impact:</strong> Designed, developed, and deployed an RPA bot that
+                    automated a 20-hour/week manual records review process, reducing errors by 95%. This repurposed manpower and allowed many $ savings in the thousands for the National Guard this bot was deployed at.</p>
+                <p><strong>Skills Used:</strong> Python, RPA Software (UiPath/Automation Anywhere), System Integration, Data Science,
+                    Problem Solving.</p>
+            </article>
 
-        <article class="project-item">
-            <h4>Jester's Assistant (API Project)</h4>
-            <p>A simple web application built to demonstrate interaction with external data via a public API.
-            </p>
+            <article class="project-item">
+                <h4>Jester's Assistant (API Project)</h4>
+                <p>A simple web application built to demonstrate interaction with external data via a public API.
+                </p>
 
-            <div id="scribe-display">
-                <p>I am connected to the digital ether. Click below to summon humorous wisdom.</p>
-            </div>
-            
-            <button id="scribe-btn">Summon a Joke</button>
-        </article>
-        </div> </div>
+                <div id="scribe-display">
+                    <p>I am connected to the digital ether. Click below to summon humorous wisdom.</p>
+                </div>
+                
+                <button id="scribe-btn">Summon a Joke</button>
+            </article>
+
+            <article class="project-item">
+                <h4>🏆 1st Place: Tech(Hack) Valley Hackathon</h3>
+                    <p>
+                        <strong>Bottom Line Up Front: </strong>A gamified productivity web application that took home <strong>Best Overall Sponsor Project (ElevenLabs)</strong> at
+                        the pioneering GT Esports VGDev Hackathon.
+                    </p>
+                    <p> <strong>Impact:</strong>
+                        As a PM and Frontend Engineer, I led a cross-functional CS team through rapid prototyping. We ultimately pivoted our
+                        architecture from Phaser to <strong>Vanilla JavaScript</strong> to accelerate development under a strict deadline. I
+                        engineered the core interface, building out the theme, gameplay mechanics, scene transitions, and attractive
+                        dialogue.
+                    </p>
+                    <p> <strong>Skills Used:</strong>
+                        Beyond coding, I managed my team's Git workflows, maintained technical documentation, and designed the pixel-art
+                        penguins along with the reward system to deliver a rewarding, user-friendly experience.
+                    </p>
+                <a href="https://devpost.com/software/locked-in-focus-farming" class="card-btn" target="_blank">Learn More Here</a> 
+            </article>
+
+        </div> <!-- End of Project Grid section. --> 
+    
+    </div>
     </section>
 
     <footer id="contact">
         <div class ="container">
-        <p>&copy; 2025 Andrew Nguyen. All rights reserved.</p>
-        <p>Email: AndrewNguyen1(at)Duck.com</p>
+        <p>&copy; 2025++ Andrew Nguyen. All rights reserved.</p>
+        <p>Email: AndrewNguyen1(at)Duck.com 
+            <div class="social-links">
+                <a href="https://github.com/Kangadrew1" target="_blank" aria-label="My GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </p>
+        
         </div>
     </footer>
     <script src="script.js"></script>
