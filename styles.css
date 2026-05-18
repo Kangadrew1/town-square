@@ -367,4 +367,16 @@ footer a {
     transform: translateY(-3px) scale(1.2); /* Lifts up and grows slightly */
 }
 
+/* Adjusted Mobile Friendly Display */
+/* MOBILE RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.0rem; 
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 60vw;
+    }
+}
+
 /* end of styles.css */
