@@ -371,7 +371,7 @@ footer a {
 /* MOBILE RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.0rem; 
+        font-size: 1.25rem; 
         white-space: nowrap; 
         overflow: hidden;
         text-overflow: ellipsis;
